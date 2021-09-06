@@ -101,6 +101,15 @@
   .section_bottom img {
     margin: 0;
   }
+  .section_bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .section_footer {
+    padding-bottom: 67px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .testi_slider .slick-slide {
@@ -132,6 +141,32 @@
 
   .section_bottom ul {
     justify-content: flex-start;
+  }
+
+  /*-----section arts--------*/
+  .art_tab {
+    flex-direction: row;
+  }
+  .art_tab .tab_content {
+    width: auto;
+    flex-basis: 60%;
+  }
+  .art_tab .tab_content {
+    width: auto;
+    flex-basis: 60%;
+  }
+  .art_tab .tab_link {
+    flex-basis: 40%;
+    width: auto;
+  }
+  .tab2 {
+    margin-top: -1.5rem;
+  }
+  .tab1::after {
+    top: 56px;
+  }
+  .tab2::after {
+    right: -30px;
   }
 }
 @media screen and (min-width: 1360px) {

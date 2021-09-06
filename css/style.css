@@ -519,6 +519,87 @@ a:hover {
   border-radius: 50%;
 }
 
+/*----------------section arts----------------*/
+.art_tab {
+  flex-direction: column;
+}
+.art_tab .tab_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.tabBg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px dashed #89a5cc;
+  border-radius: 4px;
+  padding: 1.25rem;
+  min-height: 140px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 30%);
+  background: #b4cff3;
+  background: -moz-linear-gradient(left, #b4cff3 0%, #a8e1f7 100%);
+  background: -webkit-linear-gradient(left, #b4cff3 0%, #a8e1f7 100%);
+  background: linear-gradient(to right, #b4cff3 0%, #a8e1f7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4cff3', endColorstr='#a8e1f7',GradientType=1 );
+}
+.tab1::after {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: 0;
+  background: url("../images/camera.png") no-repeat center;
+  background-position: 100%;
+  width: 199px;
+  height: 182px;
+}
+
+.tab2 {
+  margin-top: 2.5rem;
+}
+.tab2 .tabBg {
+  padding-right: 8rem;
+}
+.tab2::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -10px;
+  background: url("../images/footballcup.png") no-repeat center;
+  background-position: 100%;
+  width: 148px;
+  height: 142px;
+}
+
+.tab_content h4 {
+  font-size: clamp(1.25rem, 4vw, 1.625rem);
+  text-transform: uppercase;
+  color: var(--nutral);
+  font-family: var(--font-heading);
+  margin-bottom: 0.25rem;
+}
+.tab_content p {
+  font-style: italic;
+  color: var(--nutral);
+  line-height: 1.3;
+  font-size: 1.125rem;
+}
+.art_tab .tab_link {
+  width: 100%;
+  padding: 1rem;
+}
+.tab_link a {
+  color: var(--teretory);
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-family: var(--font-heading);
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+  display: inline-block;
+}
+
 /*----------------section offer----------------*/
 .section_offer h3 {
   padding-bottom: 1.25rem;
@@ -990,6 +1071,7 @@ a:hover {
 .section_bottom {
   padding: 0.75rem 0;
   background: var(--nutralLight);
+  width: 100%;
 }
 .section_bottom img {
   max-width: 200px;
