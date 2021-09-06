@@ -1,0 +1,241 @@
+/*media query*/
+@media screen and (min-width: 576px) {
+  /*shedule section*/
+  .section_schedule {
+    margin-top: -100px;
+  }
+  .schedule_tab > div + div {
+    margin-left: 1.5rem;
+    margin-top: 0;
+  }
+  .schedule_box {
+    padding: 4.5rem 1.5rem 2rem;
+    margin-top: 0;
+  }
+  .section_facility_wrap {
+    padding: 3.5rem 2rem 1.5rem;
+  }
+  .facility_box li {
+    padding: 0 3rem 2.5rem 8rem;
+  }
+  .facility_box li::before {
+    background-size: 105px;
+    width: 105px;
+    height: 110px;
+  }
+  .section_learn_wrap {
+    padding: 4.75rem 3rem;
+  }
+  .youtube-icon {
+    width: auto;
+  }
+  .link_tab a {
+    font-size: 1.25rem;
+    padding: 14px 30px;
+  }
+
+  .testi_slider .slick-slide {
+    padding: 0 0.5rem;
+  }
+  .section_bottom ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section_bottom ul li + li {
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /*section header*/
+  .section_header #header {
+    padding: 2rem 0;
+  }
+  /*shedule section*/
+  .section_schedule {
+    margin-top: -140px;
+  }
+
+  .schedule_tab > div {
+    font-size: 1.125rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .section_about,
+  .section_why,
+  .section_arts,
+  .section_offer {
+    padding-top: 0;
+    padding-bottom: 6rem;
+  }
+  .section_facility {
+    margin-top: 0;
+  }
+
+  .whyimg {
+    border-right: 1px dashed var(--border);
+  }
+  .facility_btn > * + * {
+    margin-top: 0;
+    margin-left: 1.25rem;
+  }
+  .appointment_right {
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .facility_box li {
+    flex-basis: 50%;
+  }
+  .testi_tab p {
+    font-size: 1.75rem;
+  }
+  .testi_comments {
+    height: 300px;
+  }
+  .followus {
+    margin: 0 auto 7rem;
+  }
+  .section_bottom img {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .testi_slider .slick-slide {
+    padding: 0 1.25rem;
+  }
+  .testi_comments {
+    height: 330px;
+  }
+  .testi_slider p {
+    font-size: clamp(1.125rem, 3vw, 1.25rem);
+  }
+
+  .appointment_left {
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    padding: 2rem 5rem;
+  }
+  .appointment_left h2 {
+    font-size: clamp(3rem, 6vw, 3.375rem);
+  }
+  .appointment_left h3 {
+    font-size: clamp(2rem, 5vw, 2.25rem);
+  }
+  .appointment_right {
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    padding: 2rem 3rem;
+  }
+
+  .section_bottom ul {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .readmore {
+    right: -90px;
+    position: relative;
+  }
+  /*section about*/
+  .section_about_wrap {
+    position: relative;
+  }
+  .section_about_wrap::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -300px;
+    background: url("../images/puzaleGame.jpg");
+    width: 295px;
+    height: 246px;
+    z-index: -1;
+  }
+  /*section why*/
+  .section_why_wrap {
+    position: relative;
+  }
+  .section_why_wrap::before {
+    content: "";
+    position: absolute;
+    bottom: 3rem;
+    left: -300px;
+    background: url("../images/chartBar.png");
+    width: 290px;
+    height: 280px;
+    z-index: -1;
+  }
+  .section_why_wrap::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -300px;
+    background: url("../images/playingKid.jpg");
+    width: 427px;
+    height: 642px;
+    z-index: -1;
+  }
+
+  /*section offer*/
+  .section_offer_wrap {
+    position: relative;
+  }
+  .section_offer_wrap::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -300px;
+    background: url("../images/game.jpg");
+    width: 345px;
+    height: 185px;
+    z-index: -1;
+  }
+  .section_offer_wrap::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -280px;
+    background: url("../images/books.jpg");
+    width: 267px;
+    height: 98px;
+    z-index: -1;
+  }
+
+  /*section learn*/
+  .section_learn_wrap::before {
+    content: "";
+    position: absolute;
+    bottom: 3rem;
+    right: -250px;
+    background: url("../images/laptop.png");
+    width: 247px;
+    height: 219px;
+    z-index: 1;
+  }
+  .section_learn_wrap::after {
+    content: "";
+    position: absolute;
+    right: -100%;
+    top: 0;
+    background: var(--bg-light);
+    width: 100%;
+    height: 100%;
+  }
+
+  /*section footer*/
+  .section_footer_wrap {
+    position: relative;
+  }
+  .section_footer_wrap::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -200px;
+    background: url("../images/girl.png");
+    width: 570px;
+    height: 600px;
+    background-size: 100%;
+  }
+}
